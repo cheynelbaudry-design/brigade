@@ -1,0 +1,48 @@
+:root{--papier:#F4F5F7;--encre:#0D1F3C;--jaune:#FFD60A;--gris:#5B6678;--trait:#D5D9E0;--blanc:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papier);color:var(--encre);font:400 17px/1.55 "Avenir Next","Segoe UI",system-ui,sans-serif}
+h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800;margin:0}
+h1{font-size:clamp(2.1rem,9vw,3.6rem)}
+h2{font-size:clamp(1.5rem,6vw,2.1rem);margin-bottom:.6em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:44px 0;border-top:1px solid var(--trait)}
+header{padding:16px 0}
+.logo{font-weight:800;font-size:1.25rem;text-decoration:none;letter-spacing:-.02em}
+.hero{padding:20px 0 48px;border:0}
+.sub{font-size:1.15rem;margin:18px 0 24px}
+.btn{display:block;text-align:center;background:var(--jaune);color:var(--encre);font-weight:800;font-size:1.15rem;text-decoration:none;padding:18px 22px;border:2px solid var(--encre);border-radius:6px;min-height:56px}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--encre);outline-offset:3px}
+.note{font-size:.95rem;color:var(--gris);margin:10px 0 0;text-align:center}
+.releve{background:var(--encre);color:var(--blanc);border-radius:6px;padding:18px;margin-top:32px;font-variant-numeric:tabular-nums}
+.releve h3{font-size:.95rem;font-weight:600;color:#B8C2D6;margin-bottom:12px}
+.ligne{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dotted #5C6C8C;font-size:.98rem}
+.ligne b{font-weight:700}
+.ligne small{display:block;color:#B8C2D6;font-size:.85rem}
+.alerte{background:var(--jaune);color:var(--encre);margin:0 -10px;padding:10px;border-radius:4px;border:0}
+.alerte small{color:var(--encre)}
+.total{font-weight:800;font-size:1.1rem;border-top:2px solid var(--blanc);margin-top:4px}
+.exemple{font-size:.85rem;color:#B8C2D6;margin:10px 0 0}
+.calc{border-left:6px solid var(--encre);padding-left:16px;font-weight:600}
+.benef{padding:0;list-style:none;margin:0}
+.benef li{padding:16px 0;border-top:1px solid var(--trait)}
+.benef strong{display:block;font-size:1.15rem}
+.offre{background:var(--blanc);border:2px solid var(--encre);border-radius:6px;padding:22px}
+.prix{font-size:2.8rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.prix span{font-size:1.1rem;font-weight:600}
+.garantie{background:var(--papier);border-left:6px solid var(--jaune);padding:12px 14px;margin:18px 0;font-size:.97rem}
+.offre ul{padding-left:20px;margin:14px 0}
+details{border-top:1px solid var(--trait);padding:14px 0}
+summary{font-weight:700;cursor:pointer;min-height:44px}
+details p{margin:8px 0 0}
+footer{padding:32px 0 110px;border-top:1px solid var(--trait);font-size:.92rem;color:var(--gris)}
+footer a{margin-right:14px;display:inline-block;padding:6px 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--papier);border-top:1px solid var(--trait)}
+.sticky .btn{padding:14px}
+.legal h1{font-size:2rem;margin:10px 0 24px}
+.legal h2{font-size:1.2rem;margin:28px 0 8px}
+.champ{background:var(--jaune);padding:0 4px}
+@media(min-width:760px){.sticky{display:none}footer{padding-bottom:40px}.btn{display:inline-block}.note{text-align:left}.hero .btn{padding:18px 34px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
